@@ -1,0 +1,55 @@
+% YAAC Another Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/darwiin/yaac-another-awesome-cv
+%
+% Author:
+% Christophe Roger
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%Section: Work Experience at the top
+\sectionTitle{경험}{\faSuitcase}
+%\renewcommand{\labelitemi}{$\bullet$}
+\begin{experiences}
+  \experience
+    {2021.03 $\sim$ 현재}{연구원}{컴퓨터그래픽스 연구실}{광주과학기술원}    
+    {2022.01} {석사논문연구주제 (Adaptive weighted Laplacian regulazation)
+                \begin{itemize}
+                  \setlength\itemsep{0.5em}
+                  \item Differentiable Rendering을 통한 mesh 최적화 연구
+                  \newline *Differentiable Rendering은 Inverse Rendering의 한 종류로 rendering에서 최적화기법을 사용해 입력값를 구하는 기법
+                  \newline **Differentiable Rendering은 목표 이미지와 렌더링 이미지 사이의 loss 함수를 설정하고, 해당 함수에서 입력값에 대한 gradient descent 방법으로 최적화된 입력값을 구해냄
+                  \item 해당 주제로 출간된 EPFL RGL의 SIGGRAPH Asia 2021 논문은 Stochastic Gradient Descent를 활용한 최적화 단계에서 discrete Laplacian Regularization을 생성, 적용하여 SGD의 variance를 줄이는 방법을 고안해냄
+                  \item 개인연구에서는 Laplacian Regularzation의 성능을 개선하는 적응형 방법을 연구개발하여, 현재 국제학술지 투고 준비중
+                \end{itemize}
+                }{C++17, CMake, gcc, Mitsuba2, Geometry-Central, Nvdiffrast, Python, Pytorch, Pybind11, vscode, Ubuntu20.04}
+  \emptySeparator
+  \experience
+    {2021.03 $\sim$ 현재}{연구원}{컴퓨터그래픽스 연구실}{광주과학기술원}
+    {2021.03} {미술관 XR트윈 프로젝트, 문화기술체육관광부 지정과제
+                \begin{itemize}
+                  \setlength\itemsep{0.5em}
+                  \item 광주광역시 광주시립미술관 실제공간과 동일하게 가상화하여 미술관 객체에 대한 XR트윈을 생성하는 프로젝트
+                  \item 해당 프로젝트에서 미술관에 대한 스캔데이터를 취득하여 전시관에 대한 mesh와 texture를 생성하는 파이프라인을 구축
+                  \item 외부 라이브러리를 활용하여, 스캔데이터(RGBD 이미지, 카메라 포즈)를 후처리하는 코드 구현
+                  \item 외부 라이브러리를 활용하여, 후처리된 스캔데이터를 mesh를 생성 후, hole filling, remeshing 등의 Geometry processing 알고리즘을 적용하여 최적화하는 코드 와 mesh의 vertex color를 texture로 변환하는 코드 구현
+                  \item 해당 프로그램을 평가받기 위한 소프트웨어 공인인증시험 준비 및 통과
+                \end{itemize}
+                }
+                {Open3D, Geogram, tbb, C++20, CMake, gcc, vscode, Ubuntu20.04}
+  \emptySeparator
+  \experience
+    {2020.01 $\sim$ 07}{학부연구생}{컴퓨터그래픽스 연구실}{성균관대학교}
+    {2020.06}{GPU 기반 실시간 멀티바운스 주변폐색 렌더링, KCGS2020
+              \vspace{0.2em}
+              \begin{itemize}
+                \setlength\itemsep{0.5em}
+                \item 연구실 내 자체 실시간 렌더링 프레임워크에 GPU 기반의 광선추적법 기능 구현
+                \item Mesh intersection 체크를 위해, 광선추적법에서 GPU에서 활용가능한 인덱스 기반의 kDtree 코드 작성
+                \item kDtree 탐색의 성능 개선을 위한 kDtree push down 알고리즘 작성
+                \item Fragment Shader에 GPU 광선추적법 구현, 해당 기능을 발전 ambient occlusion 코드 구현 및 학부생 논문초록 작성
+              \end{itemize}
+              }{C++14, VisualStudio, OpenGL4.6, Windows10}
+  \emptySeparator
+\end{experiences}

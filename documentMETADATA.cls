@@ -438,11 +438,11 @@
 
 
 \newcommand*\twocolumnsection[2]{
-  \begin{minipage}[t]{\dimexpr(\linewidth/2) - 3em}
+  \begin{minipage}[t]{\dimexpr(\linewidth/2) - 2em}
     #1
   \end{minipage}
   \hfill
-  \begin{minipage}[t]{\dimexpr(\linewidth/2) - 3em}
+  \begin{minipage}[t]{\dimexpr(\linewidth/2) - 2em}
     #2
   \end{minipage}
   }
